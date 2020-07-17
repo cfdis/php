@@ -31,7 +31,7 @@ class Facturabilidad {
 
         $headers[] = 'Content-Type: application/json';
         $headers[] = "Accept: application/json, text/javascript, */*; q=0.01";
-        $headers[] = "Authorization: Basic . $token";
+        $headers[] = "Authorization: Basic $token";
 
 //        $urlParams = http_build_query(array('entidad' => $entidad, 'operacion' => $operacion));
 //        $url = $this->apiUrl . '?' . $urlParams;
