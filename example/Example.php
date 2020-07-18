@@ -11,7 +11,7 @@ $apiSecret = 'crkQ0FZTkAtqcy4zqRrWlIpMv2nbuJRz';
 
 $client = new \Facturabilidad\Cfdi33Client($apiId, $apiSecret);
 
-$jsonCfdi = file_get_contents(__DIR__ . '/../test.json');
+$jsonCfdi = file_get_contents(__DIR__ . '/../cfdi.json');
 $cfdi = json_decode($jsonCfdi);
 $response = $client->timbrar($cfdi);
 var_dump($response);
