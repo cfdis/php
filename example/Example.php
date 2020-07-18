@@ -14,6 +14,7 @@ $client = new Cfdi33Client($apiId, $apiSecret);
 
 $jsonCfdi = file_get_contents(__DIR__ . '/../cfdi.json');
 $cfdi = json_decode($jsonCfdi);
+//$cfdi->Fecha='2020-01-01T00:00:00';
 try {
     $response = $client->timbrar($cfdi);
     if (is_string($response)) {
@@ -21,7 +22,6 @@ try {
     } else {
         echo "Cfdi generado exitosamente con id {$response->cfdiId} Descarga el pdf desde {$result->pdfUrl}";
     }
-    var_dump($response);
 } catch (\Exception $e) {
     echo $e->getMessage();
 }

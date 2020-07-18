@@ -41,15 +41,17 @@ class Facturabilidad {
 
         $server_output = curl_exec($ch);
         $httpcode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-
-
-
         curl_close($ch);
-        $response = json_decode($server_output);
-        if (NULL === $response) {
-            throw new \Exception($httpcode . ': ' . $server_output);
+        
+        if (200 == $httpcode || 400 == $httpcode) {//timbrado con éxito
+            $response = json_decode($server_output);
+            if (NULL === $response) {
+                throw new \Exception($httpcode . ': ' . $server_output);
+            } else {
+                return $response;
+            }
         } else {
-            return $response;
+            throw new \Exception($httpcode . ': ' . $server_output);
         }
     }
 
