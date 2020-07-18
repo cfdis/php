@@ -9,7 +9,7 @@ $apiSecret = 'crkQ0FZTkAtqcy4zqRrWlIpMv2nbuJRz';
 //$apiId = 'StWJNHkw8JrPTPJ2aBfV2DeOtoE0KR4x';
 //$apiSecret = '7CU/1sZhUkosm39pF+2Qs3mPrVH9l04i';
 
-$client = new \Facturabilidad\Cfdi33Client($apiId, $apiSecret, false);
+$client = new \Facturabilidad\Cfdi33Client($apiId, $apiSecret);
 
 $jsonCfdi = file_get_contents(__DIR__ . '/../test.json');
 $cfdi = json_decode($jsonCfdi);

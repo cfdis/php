@@ -15,7 +15,7 @@ namespace Facturabilidad;
  */
 class Cfdi33Client extends Facturabilidad{
 
-    function __construct($apiId = null, $apiSecret = null, $production = false) {
+    function __construct($apiId, $apiSecret, $production = false) {
         if ($production) {
             $apiUrl = "https://backend.facturabilidad.com/api";
         } else {

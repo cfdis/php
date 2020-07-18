@@ -8,7 +8,7 @@ class Facturabilidad {
     var $apiId;
     var $apiSecret;
 
-    function __construct($apiUrl = null, $apiId = null, $apiSecret = null) {
+    function __construct($apiUrl, $apiId, $apiSecret = null) {
         $this->apiUrl = $apiUrl;
         $this->apiId = $apiId;
         $this->apiSecret = $apiSecret;
