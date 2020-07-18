@@ -1,6 +1,6 @@
 <?php
 
-namespace Facturabilidad;
+namespace Cfdis\App\Api\Client;
 
 /*
  * To change this license header, choose License Headers in Project Properties.

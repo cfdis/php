@@ -1,6 +1,6 @@
 <?php
 
-namespace Facturabilidad;
+namespace Cfdis\App\Api\Client;
 
 class Facturabilidad {
 
