@@ -1,6 +1,6 @@
 <?php
 
-namespace facturabilidad;
+namespace Facturabilidad;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -13,20 +13,20 @@ namespace facturabilidad;
  *
  * @author eislas
  */
-class Cfdi33Client extends Facturabilidad {
+class Cfdi33Client extends Facturabilidad{
 
     function __construct($apiId = null, $apiSecret = null, $production = false) {
         if ($production) {
             $apiUrl = "https://backend.facturabilidad.com/api";
         } else {
             $apiUrl = "http://backend.demo.facturabilidad.com/api";
-            //$this->apiUrl = "http://local.backend.facturabilidad.com/api";
+//            $apiUrl = "http://local.backend.facturabilidad.com/api";
         }
         parent::__construct($apiUrl, $apiId, $apiSecret);
     }
 
     public function timbrar($cfdi) {
-        call('Cfdi33', 'timbrar', $cfdi);
+        return $this->call('Cfdi33', 'timbrar', $cfdi);
     }
 
 }

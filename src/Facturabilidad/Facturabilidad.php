@@ -1,16 +1,7 @@
 <?php
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+namespace Facturabilidad;
 
-/**
- * Description of Facturabilidad
- *
- * @author eislas
- */
 class Facturabilidad {
 
     var $apiUrl;
@@ -23,7 +14,7 @@ class Facturabilidad {
         $this->apiSecret = $apiSecret;
     }
 
-    function call($entidad, $operacion, $params = array()) {
+    public function call($entidad, $operacion, $params = array()) {
 
 
         $token = base64_encode($this->apiId . ':' . $this->apiSecret);
@@ -56,7 +47,7 @@ class Facturabilidad {
         curl_close($ch);
         $response = json_decode($server_output);
         if (NULL === $response) {
-            throw new Exception($httpcode . ': ' . $server_output);
+            throw new \Exception($httpcode . ': ' . $server_output);
         } else {
             return $response;
         }

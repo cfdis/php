@@ -1,0 +1,38 @@
+{
+    "Emisor":{
+        "RegimenFiscal": "601"
+    },
+    "Receptor": {
+        "Rfc": "XAXX010101000",
+        "Nombre": "Publico en general",
+        "UsoCFDI": "G03"
+    },
+    "Conceptos": {
+        "Concepto": [
+            {
+                "Cantidad": 1,
+                "Impuestos": {
+                    "Traslados": {
+                        "Traslado": [
+                            {
+                                "Impuesto": "002",
+                                "TasaOCuota": "0.160000",
+                                "TipoFactor": "Tasa",
+                                "Base": "10.000"
+                            }
+                        ]
+                    }
+                },
+                "ClaveProdServ": "01010101",
+                "ClaveUnidad": "H87",
+                "Descripcion": "none",
+                "ValorUnitario": "10.000000"
+            }
+        ]
+    },
+    "TipoDeComprobante": "I",
+    "LugarExpedicion": "12345",
+    "FormaPago": "03",
+    "MetodoPago": "PUE",
+    "Moneda": "MXN"
+}
