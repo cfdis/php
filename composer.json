@@ -1,6 +1,9 @@
 {
     "name": "facturabilidad/cfdis",
     "type": "library",
+    "description": "Client library for Google APIs",
+    "keywords": ["cfdi", "facturacion", "facturabilidad"],
+    "homepage": "https://api.facturabilidad.com/?php",
     "license": "Apache-2.0",
     "authors": [
         {
