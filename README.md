@@ -7,6 +7,7 @@ Install
 =======
 ```console
 composer require facturabilidad/cfdis
+```
 
 License
 =======
