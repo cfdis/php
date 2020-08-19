@@ -1,5 +1,5 @@
 {
-    "name": "Facturabilidad/cfdis",
+    "name": "facturabilidad/cfdis",
     "autoload": {
         "classmap": [
             "src/"
