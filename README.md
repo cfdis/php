@@ -3,6 +3,11 @@ Facturabilidad / CFDIs
 
 Provee clases para conectar con el [API de facturabilidad.com](https://api.facturabilidad.com/?php).
 
+Install
+=======
+```console
+composer require facturabilidad/cfdis
+
 License
 =======
 
