@@ -1,5 +1,13 @@
 {
     "name": "facturabilidad/cfdis",
+    "type": "library",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "Eliut",
+            "email": "eliut@outlook.com"
+        }
+    ],
     "autoload": {
         "classmap": [
             "src/"
