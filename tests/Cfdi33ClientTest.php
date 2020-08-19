@@ -15,7 +15,7 @@ class Cfdi33ClientTest extends TestCase {
 
     public function testTimbrado(): void {
         $client = new Cfdi33Client($this->apiId, $this->apiSecret);
-        $jsonCfdi = file_get_contents(__DIR__ . '/../test.json');
+        $jsonCfdi = file_get_contents(__DIR__ . '/../cfdi.json');
         $cfdi = json_decode($jsonCfdi);
         $response = $client->timbrar($cfdi);
         $this->assertTrue($response->success);
@@ -23,7 +23,7 @@ class Cfdi33ClientTest extends TestCase {
 
     public function testPasadas72Horas(): void {
         $client = new Cfdi33Client($this->apiId, $this->apiSecret);
-        $jsonCfdi = file_get_contents(__DIR__ . '/../test.json');
+        $jsonCfdi = file_get_contents(__DIR__ . '/../cfdi.json');
         $cfdi = json_decode($jsonCfdi);
         $cfdi->Fecha = '2020-01-01T00:00:00';
         $response = $client->timbrar($cfdi);
